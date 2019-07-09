@@ -2,6 +2,8 @@ import React from 'react'
 import logo from './logo.svg'
 import './App.css'
 import './App2.less'
+import {Button} from 'antd'
+// import 'antd/dist/antd.less'
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         >
           Learn React
         </a>
+        <Button>React</Button>
       </header>
     </div>
   )
