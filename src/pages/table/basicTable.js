@@ -44,7 +44,7 @@ export default class BasicTable extends React.Component {
         time: '09:00'
       }
     ]
-    data.map((item, index) => {
+    data.forEach((item, index) => {
       item.key = index
     })
     this.setState({
@@ -66,8 +66,9 @@ export default class BasicTable extends React.Component {
         }
       })
       .then(res => {
+        // console.log(res)
         if (res.code === 0) {
-          res.result.list.map((item, index) => {
+          res.result.list.forEach((item, index) => {
             item.key = index
           })
           this.setState({
@@ -99,7 +100,7 @@ export default class BasicTable extends React.Component {
   handleDelete = () => {
     let rows = this.state.selectedRows
     let ids = []
-    rows.map(item => {
+    rows.forEach(item => {
       ids.push(item.id)
     })
     Modal.confirm({
