@@ -23,9 +23,10 @@ class IRouter extends Component {
     return (
       <HashRouter>
         <App>
+          <Route exact path="/" component={Admin} />
           <Route path="/login" component={Login} />
           <Route
-            path="/admin"
+            path="/admin/ui"
             component={() => (
               <Admin>
                 <Switch>

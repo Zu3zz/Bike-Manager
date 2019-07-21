@@ -1,13 +1,15 @@
-# Available Scripts
+# 移动单车后台搭建
 
-In the project directory, you can run:
+## By AntD & React
 
-## `npm start`
+### `npm start`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.
+the program will be packaged
 
-The build is minified and the filenames include the hashes.
+### `the login page`
+
+![登录页面](./public/assets/login-page.png)
